@@ -1,29 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TextView
-        android:background="#f20"
-        android:layout_alignRight="@id/view"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/textview1"
+        android:id="@+id/textviewRed"
+        android:layout_alignLeft="@id/textviewBlue"
+        android:layout_above="@id/textviewGreen"
+        android:background="#EC407A"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
-        android:text="View 1"
-        android:layout_width="0dp"
+        android:text="Red"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <View
-        android:id="@+id/view"
-        android:layout_centerHorizontal="true"
-        android:layout_width="1dp"
-        android:layout_height="1dp"/>
     <TextView
-        android:layout_alignLeft="@id/view"
-        android:background="#3DBCB8"
-        android:layout_alignParentRight="true"
+        android:id="@+id/textviewBlue"
+        android:layout_centerInParent="true"
+        android:background="#29B6F6"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
-        android:text="View 2"
+        android:text="Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textviewGreen"
+        android:layout_alignLeft="@id/textviewBlue"
+        android:layout_above="@id/textviewBlue"
+        android:background="#9CCC65"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textviewOrange"
+        android:layout_alignLeft="@id/textviewBlue"
+        android:layout_below="@id/textviewBlue"
+        android:background="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textviewGray"
+        android:layout_alignLeft="@id/textviewBlue"
+        android:layout_below="@id/textviewOrange"
+        android:background="#CFCFCF"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textviewPink"
+        android:layout_alignLeft="@id/textviewBlue"
+        android:layout_below="@id/textviewGray"
+        android:background="#EC407A"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="Pink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
